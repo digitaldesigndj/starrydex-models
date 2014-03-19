@@ -15,7 +15,7 @@ var userSchema = new mongoose.Schema({
   servers: Array,
   purchases: Array,
 
-  server_tokens: { type: Number, default: 5 },
+  server_tokens: { type: Number, default: 0 },
   billed_seconds: { type: Number, default: 0 },
 
   starbound_password: { type: String, default: '' },
