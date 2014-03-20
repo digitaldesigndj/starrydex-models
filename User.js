@@ -17,8 +17,13 @@ var userSchema = new mongoose.Schema({
   destoryed_servers: Array,
   special_redeemed: false, // db.users.update({},{$set : {"special_redeemed":false}},false,true)
 
+  // All Time Used Tokens, Added upon destroy
   used_tokens: { type: Number, default: 0 },
+  // Tokens used on current server
+  current_server_used_tokens: { type: Number, default: 0 },
+  // Count of users tokens
   server_tokens: { type: Number, default: 0 },
+  // Keeps a total of server time
   billed_seconds: { type: Number, default: 0 },
 
   starbound_password: { type: String, default: '' },
