@@ -15,8 +15,9 @@ var userSchema = new mongoose.Schema({
   server: { type: Number, default: 0 },
   purchases: Array,
   destoryed_servers: Array,
-  special_redeemed: false,
+  special_redeemed: false, // db.users.update({},{$set : {"special_redeemed":false}},false,true)
 
+  used_tokens: { type: Number, default: 0 },
   server_tokens: { type: Number, default: 0 },
   billed_seconds: { type: Number, default: 0 },
 
