@@ -15,8 +15,6 @@ var userSchema = new mongoose.Schema({
   server: { type: Number, default: 0 },
   purchases: Array,
   destoryed_servers: Array,
-  invite_code: { type: String, default: crypto.createHash('md5').update('42'+Math.random()).digest("hex") },
-  player: { type: String, default: '' },
 
   server_tokens: { type: Number, default: 0 },
   billed_seconds: { type: Number, default: 0 },
