@@ -15,6 +15,7 @@ var userSchema = new mongoose.Schema({
   server: { type: Number, default: 0 },
   purchases: Array,
   destoryed_servers: Array,
+  special_redeemed: false,
 
   server_tokens: { type: Number, default: 0 },
   billed_seconds: { type: Number, default: 0 },
