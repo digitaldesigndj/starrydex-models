@@ -14,6 +14,14 @@ var userSchema = new mongoose.Schema({
   tokens: Array,
 
   profile: {
+    ip: { type: String, default: '' },
+    loc: { type: String, default: '' },
+    city: { type: String, default: '' },
+    postal: { type: String, default: '' },
+    region: { type: String, default: '' },
+    country: { type: String, default: '' },
+    hostname: { type: String, default: '' },
+
     player: { type: String, default: '' },
     name: { type: String, default: '' },
     gender: { type: String, default: '' },
