@@ -15,7 +15,9 @@ var userSchema = new mongoose.Schema({
   server: { type: Number, default: 0 },
   purchases: Array,
   destoryed_servers: Array,
-  special_redeemed: false, // db.users.update({},{$set : {"special_redeemed":false}},false,true)
+  special_redeemed: { type: Boolean, default: false }, // db.users.update({},{$set : {"special_redeemed":false}},false,true)
+  starrypy: { type: Boolean, default: false },
+  uuid: { type: String, default: '' },
 
   // All Time Used Tokens, Added upon destroy
   used_tokens: { type: Number, default: 0 },
