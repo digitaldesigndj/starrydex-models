@@ -16,6 +16,7 @@ var userSchema = new mongoose.Schema({
   purchases: Array,
   destoryed_servers: Array,
   special_redeemed: { type: Boolean, default: false }, // db.users.update({},{$set : {"special_redeemed":false}},false,true)
+  port: { type: Number, default: 21025 },
   starrypy: { type: Boolean, default: false },
   uuid: { type: String, default: '' },
 
