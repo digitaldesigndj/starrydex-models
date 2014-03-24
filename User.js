@@ -30,6 +30,7 @@ var userSchema = new mongoose.Schema({
   billed_seconds: { type: Number, default: 0 },
 
   starbound_password: { type: String, default: '' },
+  starbound_maxplayers: { type: Number, default: 8 },
 
   profile: {
     name: { type: String, default: '' },
