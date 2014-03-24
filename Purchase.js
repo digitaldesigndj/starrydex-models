@@ -26,6 +26,7 @@ var purchaseSchema = new mongoose.Schema({
   price: { type: String, default: '' },
   currency: { type: String, default: '' },
   order_number: { type: String, default: '' },
+  offer: { type: String, default: 'false' }
 
 });
 
