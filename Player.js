@@ -22,6 +22,11 @@ var userSchema = new mongoose.Schema({
     country: { type: String, default: '' },
     hostname: { type: String, default: '' },
 
+    alltime_votes: { type: String, default: '' },
+    thismonth_votes: { type: String, default: '' },
+    forum_posts: { type: String, default: '' },
+    forum_rep: { type: String, default: '' },
+
     forum: { type: String, default: '' },
     rank: { type: String, default: 'Player' },
     player: { type: String, default: '' },
