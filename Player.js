@@ -22,6 +22,7 @@ var userSchema = new mongoose.Schema({
     country: { type: String, default: '' },
     hostname: { type: String, default: '' },
 
+    forum: { type: String, default: '' },
     rank: { type: String, default: 'Player' },
     player: { type: String, default: '' },
     name: { type: String, default: '' },
