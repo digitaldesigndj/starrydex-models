@@ -4,6 +4,7 @@ var worldSchema = new mongoose.Schema({
   world_coords: { type: String, unique: true },
   email: { type: String, lowercase: true },
   server: Number,
+  public: { type: Boolean, default: false },
   ip_address: { type: String, default: '' },
   nickname: { type: String, default: '' },
   name: { type: String, default: '' },
