@@ -28,7 +28,7 @@ var userSchema = new mongoose.Schema({
     forum_rep: { type: String, default: '' },
 
     forum: { type: String, default: '' },
-    rank: { type: String, default: 'Player' },
+    rank: { type: String, default: 'Recruit' },
     player: { type: String, default: '' },
     name: { type: String, default: '' },
     gender: { type: String, default: '' },
