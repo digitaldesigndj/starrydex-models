@@ -43,7 +43,7 @@ var userSchema = new mongoose.Schema({
       planet: { type: String, default: '' },
       size: { type: Number, default: 0 },
       worlds: []
-    }
+    },
 
     name: { type: String, default: '' },
     gender: { type: String, default: '' },
