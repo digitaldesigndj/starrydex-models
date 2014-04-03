@@ -41,8 +41,8 @@ var userSchema = new mongoose.Schema({
       y: { type: String, default: '' },
       z: { type: String, default: '' },
       planet: { type: String, default: '' },
-      worlds: { type: Number, default: 0 },
-      world_coords: []
+      size: { type: Number, default: 0 },
+      worlds: []
     }
 
     name: { type: String, default: '' },
