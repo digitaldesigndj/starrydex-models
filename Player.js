@@ -13,6 +13,8 @@ var userSchema = new mongoose.Schema({
   linkedin: String,
   tokens: Array,
 
+  steam: { type: String, default: '' },
+
   ip: { type: String, default: '' },
   loc: { type: String, default: '' },
   city: { type: String, default: '' },
@@ -44,35 +46,7 @@ var userSchema = new mongoose.Schema({
   server_tokens: { type: Number, default: 0 },
 
   profile: {
-    ip: { type: String, default: '' },
-    loc: { type: String, default: '' },
-    city: { type: String, default: '' },
-    postal: { type: String, default: '' },
-    region: { type: String, default: '' },
-    country: { type: String, default: '' },
-    hostname: { type: String, default: '' },
-
-    alltime_votes: { type: String, default: '' },
-    thismonth_votes: { type: String, default: '' },
-    forum_posts: { type: String, default: '' },
-    forum_rep: { type: String, default: '' },
-
-    badges: { type: Array, default: ['recruit'] },
-
-    forum: { type: String, default: '' },
-    rank: { type: String, default: 'Recruit' },
-    player: { type: String, default: '' },
-    alt_characters: { type: String, default: '' },
-
-    system_coords: { type: String, default: '' },
-    system: Object,
-    name: { type: String, default: '' },
-    gender: { type: String, default: '' },
-    location: { type: String, default: '' },
-    website: { type: String, default: '' },
-    picture: { type: String, default: '' },
-    starbound_password: { type: String, default: '' },
-    server_tokens: { type: Number, default: 0 }
+    system: Object
   },
 
   resetPasswordToken: String,
