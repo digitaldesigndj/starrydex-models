@@ -35,15 +35,7 @@ var userSchema = new mongoose.Schema({
     alt_characters: { type: String, default: '' },
 
     system_coords: { type: String, default: '' },
-    system: {
-      sector: { type: String, default: '' },
-      x: { type: String, default: '' },
-      y: { type: String, default: '' },
-      z: { type: String, default: '' },
-      planet: { type: String, default: '' },
-      size: { type: Number, default: 0 },
-      worlds: []
-    },
+    system: Object,
 
     name: { type: String, default: '' },
     gender: { type: String, default: '' },
