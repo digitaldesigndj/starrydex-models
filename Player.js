@@ -36,7 +36,6 @@ var userSchema = new mongoose.Schema({
 
     system_coords: { type: String, default: '' },
     system: Object,
-
     name: { type: String, default: '' },
     gender: { type: String, default: '' },
     location: { type: String, default: '' },
