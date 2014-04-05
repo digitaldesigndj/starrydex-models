@@ -36,17 +36,15 @@ var userSchema = new mongoose.Schema({
 
     system_coords: { type: String, default: '' },
     system: {
-      type: Object, 
-      default: {
-        sector: { type: String, default: '' },
-        x: { type: String, default: '' },
-        y: { type: String, default: '' },
-        z: { type: String, default: '' },
-        planet: { type: String, default: '' },
-        size: { type: Number, default: 0 },
-        worlds: []
-      } 
-    }
+      sector: { type: String, default: '' },
+      x: { type: String, default: '' },
+      y: { type: String, default: '' },
+      z: { type: String, default: '' },
+      planet: { type: String, default: '' },
+      size: { type: Number, default: 0 },
+      worlds: []
+    },
+
     name: { type: String, default: '' },
     gender: { type: String, default: '' },
     location: { type: String, default: '' },
