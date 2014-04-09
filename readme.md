@@ -7,3 +7,4 @@ The Models shared by these applications:
 
 [StarryDex](https://github.com/flyinpancake/starrydex) - Used by the primary application at `app.js`
 
+[Boundstar](https://github.com/digitaldesigndj/boundstar) - Used by the primary application at `app.js`
