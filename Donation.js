@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var purchaseSchema = new mongoose.Schema({
+var donationSchema = new mongoose.Schema({
   // email: { type: String, unique: true },
 
   url_hash: { type: String, default: '', unique: true },
