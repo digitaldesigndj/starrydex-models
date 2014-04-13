@@ -49,6 +49,9 @@ var userSchema = new mongoose.Schema({
     system: Object
   },
 
+  donations: Array,
+  donation_amount: { type: String, default: '0' },
+
   resetPasswordToken: String,
   resetPasswordExpires: Date
 });
